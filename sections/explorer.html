@@ -1,0 +1,26 @@
+<!-- SECTION 2: MASTERLIST EXPLORER -->
+<!-- Этот раздел содержит интерактивную сетку референсов с фильтрами -->
+<section id="sec-explorer" class="hide space-y-6 animate-fade-in">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+        <div>
+            <h1 class="text-3xl font-bold">База Референсов (Masterlist)</h1>
+            <p class="text-brand-muted">Отобранные примеры механик, материалов и дизайна.</p>
+        </div>
+
+        <!-- Filters -->
+        <!-- Кнопки фильтрации по категориям -->
+        <div class="flex flex-wrap gap-2">
+            <button onclick="filterMerch('All')" class="filter-btn bg-brand-dark text-white px-4 py-2 rounded-full text-sm font-medium transition">Все</button>
+            <button onclick="filterMerch('apparel')" class="filter-btn bg-white text-brand-dark border border-brand-gray hover:border-brand-dark px-4 py-2 rounded-full text-sm font-medium transition">Apparel</button>
+            <button onclick="filterMerch('packaging')" class="filter-btn bg-white text-brand-dark border border-brand-gray hover:border-brand-dark px-4 py-2 rounded-full text-sm font-medium transition">Packaging</button>
+            <button onclick="filterMerch('gifting')" class="filter-btn bg-white text-brand-dark border border-brand-gray hover:border-brand-dark px-4 py-2 rounded-full text-sm font-medium transition">VIP Gifting</button>
+            <button onclick="filterMerch('accessories')" class="filter-btn bg-white text-brand-dark border border-brand-gray hover:border-brand-dark px-4 py-2 rounded-full text-sm font-medium transition">Accessories</button>
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <!-- Сетка карточек мерча, заполняется JS -->
+    <div id="merch-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Cards populated by JS -->
+    </div>
+</section>

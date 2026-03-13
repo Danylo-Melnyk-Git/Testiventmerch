@@ -1,0 +1,39 @@
+<!-- SECTION 1: DASHBOARD -->
+<!-- Этот раздел содержит executive summary с графиками и ключевыми инсайтами -->
+<section id="sec-dashboard" class="space-y-8 animate-fade-in">
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold mb-2">Executive Summary: 10 Лет Инноваций</h1>
+        <p class="text-brand-muted max-w-3xl">
+            Анализ мировых практик в создании лимитированных коллекций, спортивных коллабораций и премиального корпоративного мерча.
+            Цель: разработать концепцию физических носителей бренда к 10-летию PIN-UP / Redcore, покрывающую нужды от VIP-подарков до стадионных активаций.
+        </p>
+    </div>
+
+    <!-- Charts Row -->
+    <!-- Графики для визуализации баланса источников и распределения SKU -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl border border-brand-gray shadow-sm">
+            <h3 class="text-sm font-bold uppercase tracking-wide text-brand-muted mb-4">Баланс Источников (Корзины Поиска)</h3>
+            <div class="chart-container">
+                <canvas id="sourceRadarChart"></canvas>
+            </div>
+            <p class="text-xs text-center mt-2 text-brand-muted">Анализ показывает перевес в сторону Sportswear x Fashion для создания современного образа.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-brand-gray shadow-sm">
+            <h3 class="text-sm font-bold uppercase tracking-wide text-brand-muted mb-4">Рекомендуемое распределение SKU</h3>
+            <div class="chart-container">
+                <canvas id="categoryDoughnutChart"></canvas>
+            </div>
+             <p class="text-xs text-center mt-2 text-brand-muted">Упор на Premium Apparel (универсальность) и сложную упаковку (Unboxing experience).</p>
+        </div>
+    </div>
+
+    <!-- Key Insights -->
+    <!-- Сетка с 10 доминирующими паттернами, заполняется JS -->
+    <div>
+        <h2 class="text-2xl font-bold mb-6 border-b border-brand-gray pb-2">10 Доминирующих Паттернов (Global Trends 2024-2025)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="insights-grid">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+</section>
